@@ -5,12 +5,12 @@ body {
     padding: 0;
 }
 .container {
-    width: 50%;
+   
     margin: auto;
     text-align: center;
     padding: 30px;
     background: #fff;
-    margin-top: 50px;
+   
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -31,7 +31,7 @@ h1 {
     background: #0056b3;
 }
 .aes-img {
-    width: 200px;
+   
     margin: 20px 0;
 }
 input[type="text"] {
@@ -46,4 +46,9 @@ input[type="text"] {
     background: #e9ecef;
     border-radius: 6px;
     word-wrap: break-word;
+}
+
+p {
+    font-size:20px;
+    line-height:33px;
 }
