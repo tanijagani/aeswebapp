@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encrypt / Decrypt Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AES Encrypt / Decrypt</h1>
+        <form method="post">
+            <label>Text:</label><br>
+            <input type="text" name="text" required><br><br>
+
+            <label>Key:</label><br>
+            <input type="text" name="key" required><br><br>
+
+            <button type="submit" name="action" value="encrypt" class="btn">Encrypt</button>
+            <button type="submit" name="action" value="decrypt" class="btn">Decrypt</button>
+        </form>
+
+        {% if result %}
+            <h3>Result:</h3>
+            <p class="result">{{ result }}</p>
+        {% endif %}
+
+        <a href="{{ url_for('home') }}" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AES Encryption Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to AES Encryption/Decryption Tool</h1>
+        <img src="{{ url_for('static', filename='aes.png') }}" alt="AES Image" class="aes-img">
+        <p>AES (Advanced Encryption Standard) is a symmetric encryption algorithm widely used to secure data.</p>
+        <a href="{{ url_for('encrypt_decrypt') }}" class="btn">Go to Tool</a>
+    </div>
+</body>
+</html>
