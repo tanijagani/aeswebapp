@@ -7,11 +7,13 @@
 <body>
     <div class="container">
         <h1>Welcome to AES Encryption/Decryption Tool</h1>
-        <img src="static/aes.jpg" alt="AES Image" class="aes-img">
+        
         <p>Advanced Encryption Standard (AES) is a highly trusted encryption algorithm used to secure data by converting it into an unreadable format without the proper key. It is developed by the National Institute of Standards and Technology (NIST) in 2001. It is is widely used today as it is much stronger than DES and triple DES despite being harder to implement. AES encryption uses various key lengths (128, 192, or 256 bits) to provide strong protection against unauthorized access. This data security measure is efficient and widely implemented in securing internet communication, protecting sensitive data, and encrypting files. AES, a cornerstone of modern cryptography, is recognized globally for its ability to keep information safe from cyber threats.
 AES is a Block Cipher. The key size can be 128/192/256 bits. Encrypts data in blocks of 128 bits each. That means it takes 128 bits as input and outputs 128 bits of encrypted ciphertext. AES relies on the substitution-permutation network principle, which is performed using a series of linked operations that involve replacing and shuffling the input data.
 
 </p>
+<img src="static/aes.jpg" alt="AES Image" class="aes-img">
+        
         <a href="{{ url_for('encrypt_decrypt') }}" class="btn">Go to Tool</a>
     </div>
 </body>
